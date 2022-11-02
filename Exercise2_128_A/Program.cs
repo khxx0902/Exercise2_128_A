@@ -72,8 +72,25 @@ namespace BubbleSort
             pos = low;
             num = (high - low + 1);
 
-            }
+        while ((low <= eol) && (mid <= high))
+        {
+            if (numbers[low] <= numbers[mid])
+                temp[pos++] = numbers[low++];
+            else
+                temp[pos++] = numbers[mid++];
         }
+        while (low <= eol)
+            temp[pos++] = numbers[high++];
+        while (mid <= high)
+            temp[pos++] = numbers[mid++];
+        for (i = 0; i < num; i++)
+        {
+            numbers[high] = temp[high];
+            high--;
+        }
+    }
+}
+        
 
 
 
