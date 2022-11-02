@@ -62,13 +62,22 @@ namespace BubbleSort
         }
     }
 
-
-namespace Mergesort
-{ 
     class MergeSort
-    
-        
-        
+    {
+        static public void MainMerge(int[] numbers, int low, int mid, int high)
+        {
+            int[] temp = new int[25];
+            int i, eol, num, pos;
+            eol = (mid - 1);
+            pos = low;
+            num = (high - low + 1);
+
+            }
+        }
+
+
+
+
 
 
 
