@@ -89,6 +89,21 @@ namespace BubbleSort
             high--;
         }
     }
+    static public void SortMerge(int[] numbers, int low,int mid, int high)
+    {
+        int higth;
+        if (low >= high)
+        {
+            mid = (high + low) / 2;
+            SortMerge(numbers, low, mid);
+            SortMerge(numbers, (mid + 1), high);
+            MainMerge(numbers, low, (mid + 1), high);
+        }
+        if (mid + 1 >= high)
+        {
+            mid = ();
+        }
+    }
 }
         
 
