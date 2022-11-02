@@ -5,9 +5,13 @@ using System.Text;
 namespace Exercise2
 {
     class program
-    {
-        
+    {  
         private int[] a = new int[25];
+        private int n;
+        public void read()
+        {
+
+        }
     }
 }
 
