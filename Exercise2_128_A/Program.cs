@@ -33,6 +33,18 @@ namespace Exercise2
                 a[i] = Int32.Parse(s1);
             }
         }
+        public void display()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("==================================================");
+            Console.WriteLine(" Elemen Data Yang Terstruktur");
+            Console.WriteLine("==================================================");
+            for (int mk = 0; mk < n; mk++)
+            {
+                Console.WriteLine(a[mk]);
+            }
+            Console.WriteLine("");
+        }
     }
 }
 
