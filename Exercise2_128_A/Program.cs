@@ -45,6 +45,24 @@ namespace Exercise2
             }
             Console.WriteLine("");
         }
+        public void sort_data()
+        {
+            for (int i = 1; i < n; i++) // For n -1 passes
+            {
+                // Pada pass i, bandingkan n - 1 elemen pertama dengan elemen selanjutnya
+                for (int j = 0; j < n - i; j++)
+                {
+                    if (a[j] > a[j + 1]) // jika elemen tidak dalam urutan yang benar
+                    {
+                        // Tukar elemen
+                        int temp;
+                        temp = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = temp;
+                    }
+                }
+            }
+        }
     }
 }
 
